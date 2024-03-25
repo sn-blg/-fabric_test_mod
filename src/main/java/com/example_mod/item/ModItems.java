@@ -15,11 +15,6 @@ public class ModItems {
     private static Item registerItem(String id, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ExampleMod.MOD_ID, id), item);
     }
-    private static Item registerItem(String id, Item item, ItemGroup itemGroup) {
-        Item returnItem = Registry.register(Registries.ITEM, new Identifier(ExampleMod.MOD_ID, id), item);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.add(returnItem));
-        return returnItem;
-    }
     public static void register() {
         ExampleMod.LOGGER.debug("Registering items for: " + ExampleMod.MOD_ID);
     }
