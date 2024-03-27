@@ -15,8 +15,8 @@ public class ModBlocks {
             "new_block",
             new Block(FabricBlockSettings
                     .create()
-                    .strength(3.0f)
-                    .luminance(6)));
+                    .strength(1200.0f)
+                    .luminance(1)));
     private static Block registerBlock(String id, Block block) {
         ModItems.registerItem(id, new BlockItem(block, new FabricItemSettings()));
         return Registry.register(Registries.BLOCK, new Identifier(ExampleMod.MOD_ID, id), block);
