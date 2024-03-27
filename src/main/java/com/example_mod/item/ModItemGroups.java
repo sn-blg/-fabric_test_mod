@@ -1,5 +1,6 @@
 package com.example_mod.item;
 
+import com.example_mod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,7 @@ public class ModItemGroups {
                 .displayName(Text.translatable("item_group.example_mod.new_group"))
                 .entries((context, entries) -> {
                     entries.add(ModItems.NEW_ITEM);
+                    entries.add(ModBlocks.NEW_BLOCK);
                 })
                 .build();
         Registry.register(Registries.ITEM_GROUP, new Identifier(ExampleMod.MOD_ID, "new_group"), returnGroup);

@@ -1,4 +1,5 @@
 {
-  "item.example_mod.new_item": "New Item",
-  "item_group.example_mod.new_group": "New Group"
+  "item.example_mod.new_item": "Новый предмет",
+  "item_group.example_mod.new_group": "Новая группа",
+  "block.example_mod.new_block": "Новый блок"
 }
