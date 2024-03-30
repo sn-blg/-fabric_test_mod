@@ -17,6 +17,7 @@ public class ModBlocks {
                     .create()
                     .hardness(50.0f)
                     .resistance(1200.0f)
+                    .requiresTool()
                     .luminance(1)));
     private static Block registerBlock(String id, Block block) {
         ModItems.registerItem(id, new BlockItem(block, new FabricItemSettings()));
